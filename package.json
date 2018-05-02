@@ -1,0 +1,41 @@
+{
+  "name": "koa2-server",
+  "version": "0.1.0",
+  "author": "sunyongjian",
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "export NODE_ENV=development && ./node_modules/.bin/nodemon bin/www",
+    "pre-prd": "pm2 start pm2.json --watch",
+    "prd": "export  NODE_ENV=production && pm2 start pm2.json",
+    "test": "echo \"no test specified\" && exit 0",
+    "eslint:fix": "node_modules/.bin/eslint *.js --fix",
+    "docs": "apidoc -i controller -o doc/apidoc"
+  },
+  "dependencies": {
+    "@koa/cors": "2",
+    "debug": "^2.6.3",
+    "koa": "^2.2.0",
+    "koa-better-http-proxy": "^0.2.4",
+    "koa-bodyparser": "^3.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^2.0.1",
+    "koa-onerror": "^1.2.1",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "koa-views": "^5.2.1",
+    "mysql2": "^1.5.3",
+    "pug": "^2.0.0-rc.1",
+    "redis": "^2.8.0",
+    "redis-jsonify": "^1.2.0",
+    "sequelize": "^4.37.6",
+    "superagent": "^3.8.2",
+    "superagent-prefix": "^0.0.2",
+    "validatorjs": "^3.14.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "nodemon": "^1.8.1"
+  }
+}
