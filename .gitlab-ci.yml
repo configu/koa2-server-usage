@@ -1,0 +1,30 @@
+
+
+cache:
+  paths:
+  - node_modules/
+
+services:
+  - mysql:5.7
+  # - redis:3-alpine
+
+stages:
+  - deploy
+
+before_script:
+  - node -v
+  - yarn --version
+  - yarn
+
+
+
+# job 1:
+#   stage: test
+#   script: npm run test
+
+job 1:
+  stage: deploy
+  script: npm run prd
+  only:
+    - master
+
