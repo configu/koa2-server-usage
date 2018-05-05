@@ -1,0 +1,23 @@
+{
+  "apps": [{
+    "name": "app",
+    "script": "./bin/www",
+    "merge_logs": true,
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    },
+    "env_staging": {
+      "NODE_ENV": "staging",
+      "TEST": true
+    },
+    "instances": 4,
+    "max_memory_restart": "300M",
+    "exec_mode": "cluster_mode",
+    "error_file": "/home/xiaoju/factory-server/app-err.log",
+    "out_file": "/home/xiaoju/factory-server/app-out.log",
+    "pid_file": "/home/xiaoju/factory-server/app.pid"
+  }]
+}
