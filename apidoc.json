@@ -1,0 +1,9 @@
+{
+  "name": "koa-server",
+  "version": "1.0.0",
+  "description": "koa-server项目API文档",
+  "title": "koa-server API",
+  "url": "http://localhost:3003",
+  "sampleUrl": "http://localhost:3003",
+  "forceLanguage": "zh-cn"
+}
