@@ -16,8 +16,8 @@
     "instances": 4,
     "max_memory_restart": "300M",
     "exec_mode": "cluster_mode",
-    "error_file": "/home/xiaoju/factory-server/app-err.log",
-    "out_file": "/home/xiaoju/factory-server/app-out.log",
-    "pid_file": "/home/xiaoju/factory-server/app.pid"
+    "error_file": "/www/data/koa2-server/app-err.log",
+    "out_file": "/www/data/koa2-server/app-out.log",
+    "pid_file": "/www/data/koa2-server/app.pid"
   }]
 }
