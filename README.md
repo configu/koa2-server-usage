@@ -1,5 +1,5 @@
 ## intruduction
-中间层、node server 项目示例
+**中间层、node server 项目示例**
 
 ## script
 
@@ -17,7 +17,8 @@ npm run dev
 ```
 npm run pre-prd
 ```
-
+## db
+`routes/project.js` 默认未启用（注释了），需要你连接 mysql 数据库。在 `config/dev.config.js` 下改 mysql 的对应配置即可。
 ## 开发规范
 ### 分层
 开始一个新的模块，一般分几步：
@@ -37,7 +38,7 @@ npm run pre-prd
 默认采用 eslint:recommended 的拓展 rules，即 eslint 推荐的。缩进为两个空格，其他有问题的改 rules 即可。
 
 ### 返回格式
-按照对接后端的格式。比如：
+按照对接后端的格式。比如：
 ```js
 {
   data: {},
@@ -59,7 +60,7 @@ npm run pre-prd
 
 ### validator 默认支持的校验
 目录： `common/validator.js` 可拓展。
-```
+```js
 {
   accepted: ':attribute必须是可接受的.',
   alpha: ':attribute只能包含字母.',
@@ -89,7 +90,7 @@ npm run pre-prd
 }
 ```
 ### 目录结构
-```js
+```
 ├── config // 配置文件
 │   ├── dev.config.js
 │   ├── index.js
